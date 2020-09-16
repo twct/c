@@ -19,24 +19,24 @@ $ chmod +x ~/.local/bin/c
 
 ```json
 {
-	"organizations": {
-		"client-1": {
-			"key": "/home/user/.ssh/keys/client-1.pem",
-			"bastion": "ec2-user@0.0.0.0",
-			"servers": {
+    "organizations": {
+        "client-1": {
+            "key": "/home/user/.ssh/keys/client-1.pem",
+            "bastion": "ec2-user@0.0.0.0",
+            "servers": {
                 "web": "ec2-user@172.31.22.123",
                 "api": "ec2-user@172.32.22.124"
-			}
+            }
         },
         "client-2": {
             "key": "/home/user/.ssh/keys/client-2.pem",
-			"bastion": "ec2-user@1.1.1.1",
-			"servers": {
+            "bastion": "ec2-user@1.1.1.1",
+            "servers": {
                 "web": "ec2-user@172.31.22.123",
                 "api": "ec2-user@172.32.22.124"
-			}
+            }
         }
-	}
+    }
 }
 ```
 
